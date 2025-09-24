@@ -45,6 +45,18 @@ TOKEN = "your_telegram_bot_token"
 python snort_telegram_bot.py
 ```
 
+## Example Alert (Telegram)
+```bash
+🚨 ALERT SNORT (server01) 🚨
+
+⚠️ Message   : NMAP HTTP Scan detected
+📖 Classification: Attempted Information Leak
+🟧 MEDIUM (Priority 2)
+📡 Protocol  : TCP
+➡️ Source → Destination: 192.168.1.100:54321 → 192.168.1.10:80
+🖥️ Server Time: 24 Sep 2025 22:15:42
+```
+
 # Contributing
 Pull requests are welcome! Feel free to improve regex parsing, add new features, or optimize the alert system.
 
