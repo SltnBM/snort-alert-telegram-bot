@@ -1,0 +1,41 @@
+# Snort Telegram Alert Bot
+A simple Python script to forward **Snort IDS alerts** to **Telegram** in real-time.  
+This bot continuously monitors the `snort.alert.fast` log file and sends detected alerts directly to your Telegram chat.
+
+## Features
+- Real-time monitoring of Snort alerts.
+- Instant forwarding of alerts to Telegram.
+- Includes alert details: message, classification, priority, protocol, source, and destination.
+- Throttling to prevent spam (configurable interval).
+- Displays server hostname and local timestamp in each alert.
+- Graceful shutdown with `Ctrl + C`.
+
+## Requirements
+- Python 3.x
+- Required libraries:
+  - `requests`
+
+Install dependency:
+```bash
+pip install requests
+```
+
+## How to Use
+1. Make sure you have Python installed (Python 3 or higher recommended). Download it from [python.org](https://www.python.org/downloads/).
+2. Clone this repository
+```bash
+git clone https://github.com/SltnBM/snort-alert-bot.git
+```
+3. Navigate to the project directory
+```bash
+cd snort-alert-bot
+```
+4. Edit the script and set your Telegram Bot Token and Chat ID:
+```bash
+CHAT_ID = "your_chat_id"
+TOKEN = "your_telegram_bot_token"
+```
+5. Run the script using terminal or command prompt
+```bash
+python snort_telegram_bot.py
+```
