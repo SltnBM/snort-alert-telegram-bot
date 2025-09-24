@@ -17,6 +17,11 @@ This bot continuously monitors the `snort.alert.fast` log file and sends detecte
 
 Install dependency:
 ```bash
+pip install -r requirements.txt
+```
+
+Or install manually:
+```bash
 pip install requests
 ```
 
