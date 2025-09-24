@@ -44,3 +44,6 @@ TOKEN = "your_telegram_bot_token"
 ```bash
 python snort_telegram_bot.py
 ```
+
+# Contributing
+Pull requests are welcome! Feel free to improve regex parsing, add new features, or optimize the alert system.
