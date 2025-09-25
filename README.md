@@ -1,6 +1,7 @@
 # 🚨 Snort Telegram Alert Bot
 <p align="center">
   <img src="assets/snort.png" width="120" style="border:0" alt="Snort Logo">
+  <img src="assets/python.png" width="120" style="border:0" alt="python Logo">
 </p>
 
 A simple Python script to forward **Snort IDS alerts** to **Telegram** in real-time.  
