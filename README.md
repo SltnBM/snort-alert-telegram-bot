@@ -1,6 +1,11 @@
 # 🚨 Snort Telegram Alert Bot
+<p align="center">
+  <img src="assets/snort.png" width="120" style="border:0" alt="Snort Logo">
+</p>
+
 A simple Python script to forward **Snort IDS alerts** to **Telegram** in real-time.  
 This bot continuously monitors the `snort.alert.fast` log file and sends detected alerts directly to your Telegram chat.
+
 
 ## ✨ Features
 - 📡 Real-time monitoring of Snort alerts.
