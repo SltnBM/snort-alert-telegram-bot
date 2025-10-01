@@ -1,0 +1,12 @@
+# $Id: local.rules,v 1.11 2004/07/23 20:15:44 bmc Exp $
+# ----------------
+# LOCAL RULES
+# ----------------
+# This file intentionally does not come with signatures.  Put your local
+# additions here.
+
+alert icmp any any -> any any (msg:"ICMP PING Detected"; sid:1000001; rev:1; classtype:icmp-event; priority:3;)
+alert tcp any any -> any 2222 (msg:"SSH Login Attempt"; flow:to_server; classtype:attempted-admin; sid:1000002; priority:1; rev:1;)
+alert tcp any any -> any 1:1000 (flags:S; msg:"NMAP TCP SYN Scan detected"; sid:1000004; rev:1; classtype:attempted-recon; priority:1;)
+alert tcp any any -> any 80 (msg:"HTTP GET Request detected"; content:"GET"; sid:1000005; rev:1; classtype:web-application-activity; priority:2;)
+alert tcp any any -> any 80 (msg:"HTTP POST Request detected"; content:"POST"; sid:1000006; rev:1; classtype:web-application-activity; priority:2;)
