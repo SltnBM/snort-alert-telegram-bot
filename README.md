@@ -16,6 +16,7 @@ This bot continuously monitors the `snort.alert.fast` log file and sends detecte
 - ⏱️ Throttling to prevent spam (configurable interval).
 - 🖥️ Displays server hostname and local timestamp in each alert.
 - ❌ Graceful shutdown with `Ctrl + C`.
+- 📜 Supports custom Snort rules via `local.rules` file.
 
 ## ⚙️ Requirements
 - 🐍 Python 3.x
@@ -47,7 +48,14 @@ cd snort-alert-bot
 CHAT_ID = "your_chat_id"
 TOKEN = "your_telegram_bot_token"
 ```
-5. ▶️ Run the script using terminal or command prompt
+5. 📝 Add your custom Snort rules:
+  - Open `/etc/snort/rules/local.rules` with a text editor:
+     ```bash
+     sudo nano /etc/snort/rules/local.rules
+     ```
+   - Add your detection rules following Snort syntax.
+   - Save and exit the editor.
+6. ▶️ Run the script using terminal or command prompt
 ```bash
 python snort_telegram_bot.py
 ```
