@@ -29,7 +29,7 @@ pip install -r requirements.txt
 
 Or install manually:
 ```bash
-pip install requests
+pip install requests tailer
 ```
 
 ## 🚀 How to Use
