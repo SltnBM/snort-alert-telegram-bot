@@ -49,6 +49,7 @@ CHAT_ID = "your_chat_id"
 TOKEN = "your_telegram_bot_token"
 ```
 5. 📝 Add your custom Snort rules:
+  - A sample `local.rules` file is already provided in this repository.- A sample `local.rules` file is already provided in this repository.- A sample `local.rules` file is already provided in this repository.
   - Open `/etc/snort/rules/local.rules` with a text editor:
      ```bash
      sudo nano /etc/snort/rules/local.rules
