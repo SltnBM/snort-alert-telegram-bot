@@ -37,11 +37,11 @@ pip install requests tailer
 1. 🐍 Make sure you have Python installed (Python 3 or higher recommended). Download it from [python.org](https://www.python.org/downloads/).
 2. 📥 Clone this repository
 ```bash
-git clone https://github.com/SltnBM/snort-alert-bot.git
+git clone https://github.com/SltnBM/snort-alert-telegram-bot.git
 ```
 3. 📂 Navigate to the project directory
 ```bash
-cd snort-alert-bot
+cd snort-alert-telegram-bot
 ```
 4. ⚙️ Edit the script and set your Telegram Bot Token and Chat ID:
 ```bash
