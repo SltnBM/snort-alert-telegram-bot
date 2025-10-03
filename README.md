@@ -43,16 +43,12 @@ git clone https://github.com/SltnBM/snort-alert-telegram-bot.git
 ```bash
 cd snort-alert-telegram-bot
 ```
-4. 📦 Install dependencies
-```bash
-npm install
-```
-5. ⚙️ Edit the script and set your Telegram Bot Token and Chat ID:
+4. ⚙️ Edit the script and set your Telegram Bot Token and Chat ID:
 ```bash
 CHAT_ID = "your_chat_id"
 TOKEN = "your_telegram_bot_token"
 ```
-6. 📝 Add your custom Snort rules:
+5. 📝 Add your custom Snort rules:
   - A sample `local.rules` file is already provided in this repository.
   - Open `/etc/snort/rules/local.rules` with a text editor:
      ```bash
@@ -60,7 +56,7 @@ TOKEN = "your_telegram_bot_token"
      ```
    - Add your detection rules following Snort syntax.
    - Save and exit the editor.
-7. ▶️ Run the script using terminal or command prompt
+6. ▶️ Run the script using terminal or command prompt
 ```bash
 python snort_telegram_bot.py
 ```
