@@ -1,8 +1,8 @@
 # 🚨 Snort Telegram Alert Bot
 <p align="center">
   <img src="assets/snort.png" width="120" style="border:0" alt="Snort Logo">
-  <img src="assets/python.png" width="120" style="border:0" alt="python Logo">
-  <img src="assets/telegram.webp" width="60" style="border:0" alt="python Logo">
+  <img src="assets/python.png" width="120" style="border:0" alt="Python Logo">
+  <img src="assets/telegram.webp" width="60" style="border:0" alt="Telegram Logo">
 </p>
 
 A simple Python script to forward **Snort IDS alerts** to **Telegram** in real-time.  
@@ -37,17 +37,33 @@ pip install requests tailer
 1. 🐍 Make sure you have Python installed (Python 3 or higher recommended). Download it from [python.org](https://www.python.org/downloads/).
 2. 📥 Clone this repository
 ```bash
-git clone https://github.com/SltnBM/snort-alert-bot.git
+git clone https://github.com/SltnBM/snort-alert-telegram-bot.git
 ```
 3. 📂 Navigate to the project directory
 ```bash
-cd snort-alert-bot
+cd snort-alert-telegram-bot
 ```
 4. ⚙️ Edit the script and set your Telegram Bot Token and Chat ID:
 ```bash
 CHAT_ID = "your_chat_id"
 TOKEN = "your_telegram_bot_token"
 ```
+
+🔑 How to Get Your Telegram Chat ID
+You need your Chat ID to let the bot know where to send Snort alerts.
+- For Personal Chat
+  - Open Telegram and search for @userinfobot.
+  - Type /start.
+  - The bot will reply with your Chat ID.
+- For Group Chat
+  - Add your bot to the group.
+  - Send any message in the group.
+  - Run this command to see the latest updates (replace <YOUR_TOKEN> with your bot token):
+    ```bash
+    curl -s "https://api.telegram.org/bot<YOUR_TOKEN>/getUpdates"
+    ```
+  - Look for "chat":{"id": ... } → that number is your group Chat ID.
+  - ⚡ Use that Chat ID in the script config.
 5. 📝 Add your custom Snort rules:
   - A sample `local.rules` file is already provided in this repository.
   - Open `/etc/snort/rules/local.rules` with a text editor:
