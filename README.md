@@ -30,7 +30,7 @@ pip install -r requirements.txt
 
 Or install manually:
 ```bash
-pip install requests tailer
+pip install requests tailer python-dotenv
 ```
 
 ## 🚀 How to Use
@@ -43,11 +43,17 @@ git clone https://github.com/SltnBM/snort-alert-telegram-bot.git
 ```bash
 cd snort-alert-telegram-bot
 ```
-4. ⚙️ Edit the script and set your Telegram Bot Token and Chat ID:
-```bash
-CHAT_ID = "your_chat_id"
-TOKEN = "your_telegram_bot_token"
-```
+4. ⚙️ Configure your environment variables
+  - Copy `.env.example` to `.env`
+    ```bash
+    Copy .env.example to .env
+    ```
+
+  - Open `.env` and set your Telegram Bot Token and Chat ID:
+    ```bash
+    CHAT_ID=your_chat_id
+    TOKEN=your_telegram_bot_token
+    ```
 
 🔑 How to Get Your Telegram Chat ID
 You need your Chat ID to let the bot know where to send Snort alerts.
