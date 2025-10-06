@@ -8,6 +8,7 @@
 A simple Python script to forward **Snort IDS alerts** to **Telegram** in real-time.  
 This bot continuously monitors the `snort.alert.fast` log file and sends detected alerts directly to your Telegram chat.
 
+---
 
 ## ✨ Features
 - 📡 Real-time monitoring of Snort alerts.
@@ -17,6 +18,8 @@ This bot continuously monitors the `snort.alert.fast` log file and sends detecte
 - 🖥️ Displays server hostname and local timestamp in each alert.
 - ❌ Graceful shutdown with `Ctrl + C`.
 - 📜 Supports custom Snort rules via `local.rules` file.
+
+---
 
 ## ⚙️ Requirements
 - 🐍 Python 3.x
@@ -32,6 +35,8 @@ Or install manually:
 ```bash
 pip install requests tailer python-dotenv
 ```
+
+---
 
 ## 🚀 How to Use
 1. 🐍 Make sure you have Python installed (Python 3 or higher recommended). Download it from [python.org](https://www.python.org/downloads/).
@@ -83,6 +88,8 @@ You need your Chat ID to let the bot know where to send Snort alerts.
 python snort_telegram_bot.py
 ```
 
+---
+
 ## 📝 Example Alert (Telegram)
 ```bash
 🚨 ALERT SNORT (server01) 🚨
@@ -95,8 +102,12 @@ python snort_telegram_bot.py
 🖥️ Server Time: 24 Sep 2025 22:15:42
 ```
 
+---
+
 ## 🤝 Contributing
 Pull requests are welcome! Feel free to improve regex parsing, add new features, or optimize the alert system.
+
+---
 
 ## 📬 Connect With Me
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Sultan%20Badra-blue?logo=linkedin\&logoColor=white\&style=flat-square)](https://www.linkedin.com/in/sultan-badra)
