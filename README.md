@@ -11,19 +11,19 @@ This bot continuously monitors the `snort.alert.fast` log file and sends detecte
 ---
 
 ## ✨ Features
-- 📡 Real-time monitoring of Snort alerts.
-- 🚀 Instant forwarding of alerts to Telegram.
-- 📝 Includes alert details: message, classification, priority, protocol, source, and destination.
-- ⏱️ Throttling to prevent spam (configurable interval).
-- 🖥️ Displays server hostname and local timestamp in each alert.
-- ❌ Graceful shutdown with `Ctrl + C`.
-- 📜 Supports custom Snort rules via `local.rules` file.
+- Real-time monitoring of Snort alerts.
+- Instant forwarding of alerts to Telegram.
+- Includes alert details: message, classification, priority, protocol, source, and destination.
+- Throttling to prevent spam (configurable interval).
+- Displays server hostname and local timestamp in each alert.
+- Graceful shutdown with `Ctrl + C`.
+- Supports custom Snort rules via `local.rules` file.
 
 ---
 
 ## ⚙️ Requirements
-- 🐍 Python 3.x
-- 📦 Required libraries:
+- Python 3.x
+- Required libraries:
   - `requests`
 
 Install dependency:
@@ -39,16 +39,16 @@ pip install requests tailer python-dotenv
 ---
 
 ## 🚀 How to Use
-1. 🐍 Make sure you have Python installed (Python 3 or higher recommended). Download it from [python.org](https://www.python.org/downloads/).
-2. 📥 Clone this repository
+1. Make sure you have Python installed (Python 3 or higher recommended). Download it from [python.org](https://www.python.org/downloads/).
+2. Clone this repository
 ```bash
 git clone https://github.com/SltnBM/snort-alert-telegram-bot.git
 ```
-3. 📂 Navigate to the project directory
+3. Navigate to the project directory
 ```bash
 cd snort-alert-telegram-bot
 ```
-4. ⚙️ Configure your environment variables
+4. Configure your environment variables
   - Copy `.env.example` to `.env`
     ```bash
     Copy .env.example to .env
@@ -60,7 +60,7 @@ cd snort-alert-telegram-bot
     TOKEN=your_telegram_bot_token
     ```
 
-🔑 How to Get Your Telegram Chat ID
+How to Get Your Telegram Chat ID
 You need your Chat ID to let the bot know where to send Snort alerts.
 - For Personal Chat
   - Open Telegram and search for @userinfobot.
@@ -74,8 +74,8 @@ You need your Chat ID to let the bot know where to send Snort alerts.
     curl -s "https://api.telegram.org/bot<YOUR_TOKEN>/getUpdates"
     ```
   - Look for "chat":{"id": ... } → that number is your group Chat ID.
-  - ⚡ Use that Chat ID in the script config.
-5. 📝 Add your custom Snort rules:
+  - Use that Chat ID in the script config.
+5. Add your custom Snort rules:
   - A sample `local.rules` file is already provided in this repository.
   - Open `/etc/snort/rules/local.rules` with a text editor:
      ```bash
@@ -83,14 +83,14 @@ You need your Chat ID to let the bot know where to send Snort alerts.
      ```
    - Add your detection rules following Snort syntax.
    - Save and exit the editor.
-6. ▶️ Run the script using terminal or command prompt
+6. Run the script using terminal or command prompt
 ```bash
 python snort_telegram_bot.py
 ```
 
 ---
 
-## 📝 Example Alert (Telegram)
+## Example Alert (Telegram)
 ```bash
 🚨 ALERT SNORT (server01) 🚨
 
