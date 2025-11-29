@@ -1,4 +1,4 @@
-# 🚨 Snort Telegram Alert Bot
+# Snort Telegram Alert Bot
 <p align="center">
   <img src="assets/snort.png" width="120" style="border:0" alt="Snort Logo">
   <img src="assets/python.png" width="120" style="border:0" alt="Python Logo">
@@ -10,7 +10,7 @@ This bot continuously monitors the `snort.alert.fast` log file and sends detecte
 
 ---
 
-## ✨ Features
+## Features
 - Real-time monitoring of Snort alerts.
 - Instant forwarding of alerts to Telegram.
 - Includes alert details: message, classification, priority, protocol, source, and destination.
@@ -21,7 +21,7 @@ This bot continuously monitors the `snort.alert.fast` log file and sends detecte
 
 ---
 
-## ⚙️ Requirements
+## Requirements
 - Python 3.x
 - Required libraries:
   - `requests`
@@ -38,7 +38,7 @@ pip install requests tailer python-dotenv
 
 ---
 
-## 🚀 How to Use
+## How to Use
 1. Make sure you have Python installed (Python 3 or higher recommended). Download it from [python.org](https://www.python.org/downloads/).
 2. Clone this repository
 ```bash
@@ -104,13 +104,13 @@ python snort_telegram_bot.py
 
 ---
 
-## 🤝 Contributing
+## Contributing
 Pull requests are welcome! Feel free to improve regex parsing, add new features, or optimize the alert system.
 
 ---
 
-## 📬 Connect With Me
+## Connect With Me
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Sultan%20Badra-blue?logo=linkedin\&logoColor=white\&style=flat-square)](https://www.linkedin.com/in/sultan-badra)
 
-## 📄 License
+## License
 This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
